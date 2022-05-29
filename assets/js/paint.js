@@ -8,6 +8,7 @@ function configureListeners() {
     } 
 }
 
+//If not transparent, decrease opacity.
 function addOpacity(event) {
     if(!this.classList.contains('dim')){
         this.classList.add('dim');
@@ -15,6 +16,7 @@ function addOpacity(event) {
     getProductInfo(event.target.id);     
 }
 
+//If transparent, default opacity
 function removeOpacity(event) {
      if(this.classList.contains('dim')){
          this.classList.remove('dim');
